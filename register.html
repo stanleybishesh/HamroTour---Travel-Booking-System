@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>User Registration</h1>
+        <form action="insert.php" method="post">
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="phonenumber">Phone number</label>
+            <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{10}" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Username</label>
+            <input type="text" placeholder="e.g. Michael Jackson" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit"><a>Register</a></button><br />
+
+    </div>
+
+    </form>
+</body>
+
+</html>

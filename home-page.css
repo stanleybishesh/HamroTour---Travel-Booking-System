@@ -1,0 +1,61 @@
+.home-page{
+    color: darkred;
+}
+
+.back-video{
+    width:100%;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index:-1;
+}
+
+.caption{
+    text-align:center;  
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    float: middle;
+    margin-top: 150px;
+    color:darkred;
+}
+
+.button{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+
+}
+
+.explore{
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 650px;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.explore:hover{
+    color: black;
+}
+
+.explore::before{
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+}
+
+.explore:hover::before{
+    transform: scaleX(1);
+}

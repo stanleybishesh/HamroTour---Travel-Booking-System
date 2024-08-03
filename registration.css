@@ -1,0 +1,65 @@
+.form h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200px;
+    font-size:250%;
+    border: 1px solid darkslategrey;
+    padding: 30px 50px;
+    background-color: rgba(249, 255, 245, 0.29);
+    margin: 0;
+    border-radius: 0px;
+}
+.form label{
+    display:block;
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form input{
+    width:300px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.form{
+    background-color:#ffffff8a;
+    padding:0;
+    border: 1px solid dimgray;
+}
+    .form form{
+        padding:30px 60px;
+    }
+body{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    background-color: lightgray;
+    background-image: url('img/pexels-streetwindy-2108831.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+a:hover{
+    color: red;
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}

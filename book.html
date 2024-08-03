@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bokcss.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="aboutus.html"><img class="logo" src="img/nepalfinal.png"></a>
+    <ul>
+      <li><a href="hamrotour.html">Home</a></li>
+      <li><a href="price.html">Prices</a></li>
+      <li><a href="service.html">Travel</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div>
+    <section class="container">
+      <header>Hamro Tour Reservation Form</header>
+      <form action="bookin.php" method="post" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" id="Name" name="Name" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" id="Email" name="Email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="text" id="Phone" name="Phone" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Date of Visit</label>
+            <input type="date" id="Date" name="Date" placeholder="Date of visit" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="Gender" name="Gender" value="Male" checked />Male
+
+            </div>
+            <div class="gender">
+              <input type="radio" id="Gender" name="Gender" value="Female">Female
+
+            </div>
+            <div class="gender">
+              <input type="radio" id="Gender" name="Gender" value="Other">Other
+
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Starting point</label>
+          <input type="text" value="KATHMANDU" style="margin-bottom: 3%;" readonly>
+          <label>Destination</label>
+          <div class="select-box" style="margin-bottom: 3%;">
+            <select id="Place" name="Place">
+              <option hidden>Choose location</option>
+              <option value="POKHARA">POKHARA</option>
+              <option value="ILLAM">ILLAM</option>
+              <option value="SOLUKHUMBU">SOLUKHUMBU</option>
+              <option value="LUMBINI">LUMBINI</option>
+              <option value="MUSTANG">MUSTANG</option>
+              <option value="JANAKPUR">JANAKPUR</option>
+            </select>
+          </div>
+          <label>Number of person(s)</label>
+          <input type="number" id="No_person" name="No_person" style="margin-bottom: 3%;"
+            placeholder="Enter number of people to travel" min="1" required />
+          <label>Means of Transportation</label>
+          <div class="select-box">
+            <select id="Transportation" name="Transportation">
+              <option hidden>Choose location</option>
+              <option value="Car">Car</option>
+              <option value="Jeep">Jeep</option>
+              <option value="Micro-van">Micro-van</option>
+              <option value="Bus">Bus</option>
+              <option value="Airlines">Airlines</option>
+            </select>
+          </div>
+          <button type="submit" name="submit">Submit</button>
+        </div>
+  </div>
+  </form>
+  </section>
+  </div>
+</body>
+
+</html>

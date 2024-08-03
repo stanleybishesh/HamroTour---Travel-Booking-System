@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="contcss.css">
+	<title>Contact us Page</title>
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="aboutus.html"><img class="logo" src="img/nepalfinal.png"></a>
+		<ul>
+			<li><a href="hamrotour.html">Home</a></li>
+			<li><a href="price.html">Prices</a></li>
+			<li><a href="service.html">Travel</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="aboutus.html">About us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<section class="banner">
+		<img src="img/contactss.png" alt="Welcome to our Contact Us page">
+		<h1>Get in Touch With Us</h1>
+		<p>we are here to answer your questions !</p>
+	</section>
+	<section class="contact-form">
+		<div class="form-container">
+			<h2>Your Details</h2>
+			<form action="cont.php" method="POST">
+
+				<label for="Name">Name</label>
+				<input type="text" id="Name" name="Name" required>
+
+				<label for="Email">Email</label>
+				<input type="text" id="Email" name="Email" required>
+
+				<label for="Message">Message</label>
+				<textarea id="text" name="Message" rows="4" required></textarea>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>
